@@ -1,0 +1,322 @@
+/* Общие */
+
+body {
+    font-family: "Roboto", "Playfair Display;";
+    font-size: 15px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Голова */
+
+header {
+    padding-top: 38px;
+    padding-bottom: 32px
+}
+
+h1 {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 21px;
+    flex-wrap: wrap;
+}
+
+.header-menu a {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.item-menu:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Мэин подводный отель */
+
+.promo {
+    background-image: url(../img/hotel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    color: white;
+    height: 464px;
+    width: 1440px;
+}
+
+.promo::after {
+    content: "";
+    background-image: url(../img/hotel-logo.svg);
+    display: block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: 925px;
+    top: 264px;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-top: 133px;
+}
+
+.promo-info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 122px;
+}
+
+
+/* Мэин обзоры */
+
+.reviews h3 {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 45px;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reviews-list p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+article {
+    width: 370px;
+}
+
+h4 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+h4:hover {
+    color: #FF7931;
+    cursor: pointer;
+}
+
+
+/* Мэин абонемент */
+
+.subscription {
+    text-align: center;
+    background-color: #F7F7F7;
+    margin-top: 37px;
+    height: 556px;
+    background-image: url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.subscription h3 {
+    padding-top: 33px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.subscription h4 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    margin-bottom: 9px;
+}
+
+.subscription p {
+    width: 370px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 auto;
+}
+
+.ticket-item {
+    margin-bottom: 46px;
+}
+
+.open-ticket {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF7931;
+    width: 170px;
+    display: flex;
+    height: 47px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.open-ticket::after {
+    content: "";
+    background-image: url(../img/arrow-look.svg);
+    display: block;
+    width: 24px;
+    height: 25px;
+    margin-left: 7px;
+}
+
+.open-ticket:hover {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Футер */
+
+footer {
+    background-color: #575757;
+    height: 295px;
+}
+
+footer h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding-top: 26px;
+    padding-bottom: 14px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-nav a {
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 47px;
+    height: 47px;
+    background-color: white;
+    display: block;
+}
+
+.social-icon:hover {
+    background-color: #FF7931;
+    border-radius: 5px;
+}
+
+.social {
+    display: flex;
+}
+
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook {
+    margin-left: 14px;
+    margin-right: 15px;
+}
+
+.item-menu-footer:hover {
+    color: #FF7931;
+}
